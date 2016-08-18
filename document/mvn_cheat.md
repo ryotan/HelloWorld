@@ -1,5 +1,4 @@
 # Mavenチートシート的な何か
-#### 早瀬圭佑
 #### 参考 : [Maven3 チュートリアル](http://sambatriste.github.io/maven3-tutorial/)
 
 ## ライフサイクル編
