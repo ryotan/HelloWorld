@@ -1,4 +1,6 @@
 # Mavenチートシート的な何か
+#### 早瀬圭佑
+#### 参考 : [Maven3 チュートリアル](http://sambatriste.github.io/maven3-tutorial/)
 
 ## ライフサイクル編
 <!-- アーキタイプからmavenプロジェクトを作成
@@ -110,7 +112,7 @@ IntelliJ形式のフォルダ構成に変換
 : `mvn -U compile`
 
 ローカルからjarを削除
-: `rm ~/.m2/repository/junit/junit/3.8.1/*`
+: `rm ~/.m2/repository/junit/junit/{バージョン}/*`
 
 ローカルにmvn install [^3]
 : `mvn install:install-file -Dfile=<ファイル>`
