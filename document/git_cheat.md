@@ -17,6 +17,8 @@
 リモートからファイルを取ってくる
 : `git fetch {remote} {branch}`
 
+![git fetch](https://github.com/steelplus/HelloWorld/blob/master/document/img/branch_fetch.png "サンプル")
+
 fetch + merge
 : `git pull {remote} {branch}`
 
