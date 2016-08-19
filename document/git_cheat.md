@@ -1,4 +1,4 @@
-# Gitチートシート的な何か(編集中)
+# Gitチートシート的な何か
 #### 参考 : [Gitチュートリアル](https://www.atlassian.com/ja/git)
 
 ## よく使うリモートとのやり取り編
@@ -19,6 +19,9 @@
 
 fetch + merge
 : `git pull {remote} {branch}`
+
+fetch + rebase
+: `git pull --rebase {remote} {branch}`
 
 ### - 送るコマンド
 作業ファイルをステージングエリアへ送る
@@ -49,7 +52,8 @@ fetch + merge
 現在のブランチに指定ブランチをマージ(noff)
 : `git merge --no-ff {branch}`
 
-TODO ribe-su 
+現在のブランチを指定ブランチにリベース
+: `git rebase {branch}`
 
 ## - 修正作業編
 ### - コミットに対して
