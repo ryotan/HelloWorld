@@ -8,7 +8,7 @@
 
 ### - 接続関連のコマンド
 接続の作成
-: `git remote {name} {url}`
+: `git remote add {name} {url}`
 
 接続の削除
 : `git remote rm {name}`
@@ -44,8 +44,11 @@ fetch + rebase
 新規ブランチを作成
 : `git branch {branch}`
 
+指定ブランチを削除
+: `git branch -D {branch}`
+
 ブランチ名を変更
-: `git branch -m <branch>`
+: `git branch -m {branch}`
 
 指定のブランチに移動
 : `git checkout {branch}`
@@ -108,3 +111,20 @@ fetch + rebase
 | `--grep="{pattern}"`|特定のコミットメッセージを持つコミットを検索|
 | `{since}..{until}`|{since}と{until}の間のコミットを表示|
 | `{file}`|{file}を含むコミットを表示|
+
+
+## - トラブルシューティング
+直前のコミットメッセージを修正したい
+: `git commit --amend -m "new comment"`
+
+リモートで削除したブランチがローカルに残っている
+: `git remote prune {remote}`
+
+マージ、リベースに失敗した
+: `git reset ORIG_HEAD`
+
+間違ったブランチにpushしてしまった :
+```git:tekito
+git revert {push先のブランチ}
+git push {push先のブランチ} {remote}
+```
