@@ -4,7 +4,7 @@
 
 ## よく使うリモートとのやり取り編
 
-![git](https://github.com/steelplus/HelloWorld/blob/master/document/img/areas.png "各エリアの図")
+![git](/img/areas.png "各エリアの図")
 
 ### - 接続関連のコマンド
 接続の作成
@@ -20,7 +20,7 @@
 リモートからファイルを取ってくる
 : `git fetch {remote} {branch}`
 
-![git fetch](https://github.com/steelplus/HelloWorld/blob/master/document/img/branch_fetch.png "fetchの図")
+![git fetch](/img/branch_fetch.png "fetchの図")
 
 fetch + merge
 : `git pull {remote} {branch}`
@@ -54,7 +54,7 @@ fetch + rebase
 現在のブランチに指定ブランチをマージ
 : `git merge {branch}`
 
-![git merge](https://github.com/steelplus/HelloWorld/blob/master/document/img/branch_merge.png "mergeの図")
+![git merge](/img/branch_merge.png "mergeの図")
 
 
 現在のブランチに指定ブランチをマージ(noff)
@@ -63,7 +63,7 @@ fetch + rebase
 現在のブランチを指定ブランチにリベース
 : `git rebase {branch}`
 
-![git rebase](https://github.com/steelplus/HelloWorld/blob/master/document/img/branch_rebase.png "rebaseの図")
+![git rebase](/img/branch_rebase.png "rebaseの図")
 
 
 ## - 修正作業編
@@ -99,7 +99,7 @@ fetch + rebase
 : `git log`
 
 | git logオプション | 内容|
-|:-|:-|
+|:--|:--|
 | `-n {limit}`|{limit}個のログを表示|
 | `--oneline`|コミットの内容を1行にして表示|
 | `--stat`|改変されたファイルとその行数増減を表示|
