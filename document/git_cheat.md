@@ -74,8 +74,12 @@ fetch + rebase
 指定したコミットを打ち消すコミットを作成する
 : `git revert {commit}`
 
-直前のコミットの内容を修正したい
+直前のコミットの内容を修正したい(上書きコミット)
 : `git commit --amend`
+
+指定したコミットまでヘッドを移動
+: `git reset --soft {commit}`
+
 ### - ステージングエリアに対して
 指定ファイルをステージングエリアから削除
 : `git reset {file}`
@@ -128,3 +132,9 @@ fetch + rebase
 git revert {push先のブランチ}
 git push {push先のブランチ} {remote}
 ```
+
+さっきの「編集してコミットした」事をなかったことにしたい
+: `git reset --hard HEAD^`
+
+さっきのresetをなかった事にしたい
+: `git reset --hard ORIG_HEAD`
