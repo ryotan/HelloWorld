@@ -4,7 +4,7 @@
 
 ## よく使うリモートとのやり取り編
 
-![git](https://github.com/steelplus/HelloWorld/blob/master/document/img/area.png "各エリアの図")
+![git](https://github.com/steelplus/HelloWorld/blob/master/document/img/areas.png "各エリアの図")
 
 ### - 接続関連のコマンド
 接続の作成
@@ -97,3 +97,14 @@ fetch + rebase
 
 現在のブランチのコミットログを確認する
 : `git log`
+
+| git logオプション | 内容|
+|:-|:-|
+| `-n {limit}`|{limit}個のログを表示|
+| `--oneline`|コミットの内容を1行にして表示|
+| `--stat`|改変されたファイルとその行数増減を表示|
+| `-p`| 各コミットごとのパッチの内容を表示|
+| `--author="{pattern}"`|特定の人物が行ったコミットを検索|
+| `--grep="{pattern}"`|特定のコミットメッセージを持つコミットを検索|
+| `{since}..{until}`|{since}と{until}の間のコミットを表示|
+| `{file}`|{file}を含むコミットを表示|
