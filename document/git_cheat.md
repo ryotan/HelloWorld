@@ -17,7 +17,7 @@
 リモートからファイルを取ってくる
 : `git fetch {remote} {branch}`
 
-![git fetch](https://github.com/steelplus/HelloWorld/blob/master/document/img/branch_fetch.png "サンプル")
+![git fetch](https://github.com/steelplus/HelloWorld/blob/master/document/img/branch_fetch.png "fetchの図")
 
 fetch + merge
 : `git pull {remote} {branch}`
@@ -51,11 +51,17 @@ fetch + rebase
 現在のブランチに指定ブランチをマージ
 : `git merge {branch}`
 
+![git merge](https://github.com/steelplus/HelloWorld/blob/master/document/img/branch_merge.png "mergeの図")
+
+
 現在のブランチに指定ブランチをマージ(noff)
 : `git merge --no-ff {branch}`
 
 現在のブランチを指定ブランチにリベース
 : `git rebase {branch}`
+
+![git rebase](https://github.com/steelplus/HelloWorld/blob/master/document/img/branch_rebase.png "rebaseの図")
+
 
 ## - 修正作業編
 ### - コミットに対して
