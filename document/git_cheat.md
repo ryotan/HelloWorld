@@ -4,7 +4,7 @@
 
 ## よく使うリモートとのやり取り編
 
-![git](/img/areas.png "各エリアの図")
+![git](/document/img/areas.png "各エリアの図")
 
 ### - 接続関連のコマンド
 接続の作成
@@ -20,7 +20,7 @@
 リモートからファイルを取ってくる
 : `git fetch {remote} {branch}`
 
-![git fetch](/img/branch_fetch.png "fetchの図")
+![git fetch](/document/img/branch_fetch.png "fetchの図")
 
 fetch + merge
 : `git pull {remote} {branch}`
@@ -54,7 +54,7 @@ fetch + rebase
 現在のブランチに指定ブランチをマージ
 : `git merge {branch}`
 
-![git merge](/img/branch_merge.png "mergeの図")
+![git merge](/document/img/branch_merge.png "mergeの図")
 
 
 現在のブランチに指定ブランチをマージ(noff)
@@ -63,7 +63,7 @@ fetch + rebase
 現在のブランチを指定ブランチにリベース
 : `git rebase {branch}`
 
-![git rebase](/img/branch_rebase.png "rebaseの図")
+![git rebase](/document/img/branch_rebase.png "rebaseの図")
 
 
 ## - 修正作業編
@@ -81,7 +81,7 @@ fetch + rebase
 : `git reset`
 
 ### - ステージングエリア、作業ディレクトリに対して
-直前のコミット状態まで巻き戻す
+直前のコミット状態まで巻き戻す(ローカルでした編集を無かったことにする)
 : `git reset --hard`
 
 ### - ブランチに対して
