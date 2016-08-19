@@ -7,6 +7,9 @@
 ![git](/document/img/areas.png "各エリアの図")
 
 ### - 接続関連のコマンド
+現在のディレクトリをGitリポジトリに変換
+: `git init`
+
 接続の作成
 : `git remote add {name} {url}`
 
@@ -15,6 +18,9 @@
 
 接続名の変更
 : `git remote rename {old-name} {new-name}`
+
+現在のディレクトリに既存リポジトリのコピーを取得する
+: `git clone {url}`
 
 ### - 取ってくるコマンド
 リモートからファイルを取ってくる
