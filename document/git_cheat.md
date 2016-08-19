@@ -1,7 +1,10 @@
 # Gitチートシート的な何か
-#### 参考 : [Gitチュートリアル](https://www.atlassian.com/ja/git)
+#### 参考 : [Gitチュートリアル](https://www.atlassian.com/ja/git), [こわくない Git](http://www.slideshare.net/kotas/git-15276118)
+#### お勧め : [Gitクエスト](http://unit8.net/gq/)
 
 ## よく使うリモートとのやり取り編
+
+![git](https://github.com/steelplus/HelloWorld/blob/master/document/img/area.png "各エリアの図")
 
 ### - 接続関連のコマンド
 接続の作成
@@ -67,6 +70,9 @@ fetch + rebase
 ### - コミットに対して
 指定したコミットを打ち消すコミットを作成する
 : `git revert {commit}`
+
+直前のコミットの内容を修正したい
+: `git commit --amend`
 ### - ステージングエリアに対して
 指定ファイルをステージングエリアから削除
 : `git reset {file}`
@@ -84,3 +90,10 @@ fetch + rebase
 
 指定のコミット状態まで巻き戻す
 : `git reset --hard {commit}`
+
+## - 情報参照編
+現在のブランチのログを確認する
+: `git reflog`
+
+現在のブランチのコミットログを確認する
+: `git log`
